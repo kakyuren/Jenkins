@@ -1,0 +1,21 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('开始') {
+            steps {
+                echo '开始'
+            }
+        }
+        stage('测试') {
+            steps {
+                echo 'ceshi'
+            }
+        }
+        stage('结束') {
+            steps {
+                echo 'jieshu'
+            }
+        }
+    }
+}
